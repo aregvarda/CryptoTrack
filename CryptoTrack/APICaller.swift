@@ -11,7 +11,7 @@ final class APICaller {
     static let shared = APICaller()
     private struct Constants {
         static let apiKey = "304119F6-8611-417B-9307-FCA77B6A1EB1"
-        static let assetsEndpoint = "http://rest-sandbox.coinapi.io/v1/assets/"
+        static let assetsEndpoint = "https://rest-sandbox.coinapi.io/v1/assets/"
     }
     
     private init() {}

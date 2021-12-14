@@ -9,5 +9,6 @@ import UIKit
 
 class CryptoTableViewCell: UITableViewCell {
     static let identifier = "CryptoTableViewCell"
-
+    
+    
 }
