@@ -7,13 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// API Caller
+// UI to show different cryptos
+// MVVM
 
+class ViewController: UIViewController {
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(CryptoTableViewCell.self,
+                           forCellReuseIdentifier: CryptoTableViewCell.identifier)
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.addSubview(tableView)
+        tableView.dataSource = self
+        
     }
-
-
 }
 

@@ -13,6 +13,8 @@
 		C85219AD2768E84B00A7FBD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85219AB2768E84B00A7FBD1 /* Main.storyboard */; };
 		C85219AF2768E84E00A7FBD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85219AE2768E84E00A7FBD1 /* Assets.xcassets */; };
 		C85219B22768E84E00A7FBD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85219B02768E84E00A7FBD1 /* LaunchScreen.storyboard */; };
+		C85219BA2768EB7100A7FBD1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85219B92768EB7100A7FBD1 /* APICaller.swift */; };
+		C85219BC2768F85900A7FBD1 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85219BB2768F85900A7FBD1 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C85219AE2768E84E00A7FBD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C85219B12768E84E00A7FBD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85219B32768E84E00A7FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85219B92768EB7100A7FBD1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C85219BB2768F85900A7FBD1 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				C85219A52768E84B00A7FBD1 /* AppDelegate.swift */,
 				C85219A72768E84B00A7FBD1 /* SceneDelegate.swift */,
 				C85219A92768E84B00A7FBD1 /* ViewController.swift */,
+				C85219B92768EB7100A7FBD1 /* APICaller.swift */,
+				C85219BB2768F85900A7FBD1 /* CryptoTableViewCell.swift */,
 				C85219AB2768E84B00A7FBD1 /* Main.storyboard */,
 				C85219AE2768E84E00A7FBD1 /* Assets.xcassets */,
 				C85219B02768E84E00A7FBD1 /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 				C85219AA2768E84B00A7FBD1 /* ViewController.swift in Sources */,
 				C85219A62768E84B00A7FBD1 /* AppDelegate.swift in Sources */,
 				C85219A82768E84B00A7FBD1 /* SceneDelegate.swift in Sources */,
+				C85219BC2768F85900A7FBD1 /* CryptoTableViewCell.swift in Sources */,
+				C85219BA2768EB7100A7FBD1 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
