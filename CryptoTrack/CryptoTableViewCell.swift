@@ -89,10 +89,29 @@ class CryptoTableViewCell: UITableViewCell {
         )
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        iconImageView.image = nil
+        nameLabel.text = nil
+        priceLabel.text = nil
+        symbolLabel.text = nil
+    }
+    
     func configure(with viewModel: CryptoTableViewCellViewModel) {
         nameLabel.text = viewModel.name
         priceLabel.text = viewModel.price
         symbolLabel.text = viewModel.symbol
+        
+        if let url = viewModel.iconUrl {
+            let task = URLSession.shared.dataTask(with: url) { [ weak self ] data, _, _ in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        self?.iconImageView.image = UIImage(data: data)
+                    }
+                }
+            }
+            task.resume()
+        }
     }
     
     required init?(coder: NSCoder) {
