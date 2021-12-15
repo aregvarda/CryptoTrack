@@ -39,7 +39,6 @@ class CryptoTableViewCell: UITableViewCell {
     
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
